@@ -76,7 +76,7 @@
                 <nav>
                     <ul id="navmenu" class="list-unstyled mb-0">
                         <li>
-                            <a href="<?php echo esc_url(get_permalink(6)); ?>">
+                            <a href="<?php echo esc_url(home_url()); ?>">
                                 <?php echo esc_html(get_the_title(6)); ?>
                             </a>
                         </li>
@@ -141,9 +141,9 @@
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
                                     <a <?php if (
-                                        is_page(6)
+                                        is_home()
                                     ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
-     get_permalink(6),
+     home_url(),
  ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(6),

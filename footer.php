@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 text-center my-auto">
-                        <a href="#">
+                        <a href="<?php echo esc_url(home_url()); ?>">
                             <img
                                 id="logo-footer"
                                 class="logo img-fluid mb-4 mb-lg-0"
@@ -110,7 +110,7 @@
                                     <ul class="list-unstyled">
                                         <li>
                                             <a href="<?php echo esc_url(
-                                                get_permalink(6),
+                                                home_url(),
                                             ); ?>">
                                                 <?php echo esc_html(
                                                     get_the_title(6),
