@@ -140,54 +140,66 @@
                         <nav class="d-none d-lg-block">
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(6),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(6)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(6),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(6),
                                         ); ?>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(8),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(8)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(8),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(8),
                                         ); ?>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(10),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(10)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(10),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(10),
                                         ); ?>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(12),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(12)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(12),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(12),
                                         ); ?>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(14),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(14)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(14),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(14),
                                         ); ?>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        get_permalink(16),
-                                    ); ?>">
+                                    <a <?php if (
+                                        is_page(16)
+                                    ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
+     get_permalink(16),
+ ); ?>">
                                         <?php echo esc_html(
                                             get_the_title(16),
                                         ); ?>
