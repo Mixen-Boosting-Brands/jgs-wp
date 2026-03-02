@@ -1,0 +1,47 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    #jumbotron-sin-fondo {
+        padding-top: 100px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    #jumbotron {
+        padding: 60px 0;
+    }
+
+    #jumbotron-sin-fondo {
+        padding-top: 110px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    #jumbotron {
+        img#logo {
+            right: 30px;
+            width: 400px;
+        }
+    }
+
+    #capacidad {
+        ul {
+            li {
+                p {
+                    top: -7px;
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+}

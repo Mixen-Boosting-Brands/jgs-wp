@@ -1,1 +1,3 @@
-# jgs-wp
+# JGS
+
+&copy; 2026 Mixen: Boosting Brands
