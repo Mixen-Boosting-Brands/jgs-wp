@@ -1,71 +1,73 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-	<!-- section -->
-	<section>
+<?php if (have_posts()):
+    while (have_posts()):
+        the_post(); ?>
 
-	<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
+<?php
+$fallback = get_template_directory_uri() . "/assets/images/bg-j-3.png";
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+$bg_image = has_post_thumbnail()
+    ? get_the_post_thumbnail_url(get_the_ID(), "full")
+    : $fallback;
+?>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post. ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
+<section
+    id="jumbotron"
+    style="background-image: url('<?php echo esc_url($bg_image); ?>');"
+>
+    <div class="container">
+        <div class="row d-flex align-items-end">
+            <div class="col-12">
+                <h1
+                    class="display-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <?php the_title(); ?>
+                </h1>
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
+                <p
+                    class="mt-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >
+                    <?php echo get_the_date(); ?> · <?php the_author(); ?>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-			<!-- post details -->
-			<span class="date">
-				<time datetime="<?php the_time( 'Y-m-d' ); ?> <?php the_time( 'H:i' ); ?>">
-					<?php the_date(); ?> <?php the_time(); ?>
-				</time>
-			</span>
-			<span class="author"><?php esc_html_e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if ( comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' ) ); ?></span>
-			<!-- /post details -->
+<section class="pt-60 pb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
 
-			<?php the_content(); // Dynamic Content. ?>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                >
+                    <?php the_content(); ?>
+                </div>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>' ); // Separated by commas with a line break at the end. ?>
+                <div class="mt-5">
+                    <?php the_tags(
+                        "<p><strong>Tags:</strong> ",
+                        ", ",
+                        "</p>",
+                    ); ?>
+                </div>
 
-			<p><?php esc_html_e( 'Categorised in: ', 'html5blank' ); the_category( ', ' ); // Separated by commas. ?></p>
+            </div>
+        </div>
+    </div>
+</section>
 
-			<p><?php esc_html_e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php edit_post_link(); // Always handy to have Edit Post Links available. ?>
-
-			<?php comments_template(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else : ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
-	</section>
-	<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<?php
+    endwhile;
+endif; ?>
 
 <?php get_footer(); ?>

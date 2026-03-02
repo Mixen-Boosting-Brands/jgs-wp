@@ -1,45 +1,58 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+<?php if (have_posts()):
+    while (have_posts()):
+        the_post(); ?>
 
-			<h1><?php the_title(); ?></h1>
+<?php
+// Imagen fallback
+$fallback = get_template_directory_uri() . "/assets/images/bg-j-3.png";
 
-		<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
+// Imagen destacada o fallback
+$bg_image = has_post_thumbnail()
+    ? get_the_post_thumbnail_url(get_the_ID(), "full")
+    : $fallback;
+?>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section
+    id="jumbotron"
+    style="background-image: url('<?php echo esc_url($bg_image); ?>');"
+>
+    <div class="container">
+        <div class="row d-flex align-items-end">
+            <div class="col-12">
+                <h1
+                    class="display-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <?php the_title(); ?>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
 
-				<?php the_content(); ?>
+<section class="pt-60 pb-30">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
 
-				<?php comments_template( '', true ); // Remove if you don't want comments. ?>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >
+                    <?php the_content(); ?>
+                </div>
 
-				<br class="clear">
+            </div>
+        </div>
+    </div>
+</section>
 
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else : ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<?php
+    endwhile;
+endif; ?>
 
 <?php get_footer(); ?>

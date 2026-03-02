@@ -1,6 +1,5 @@
-servicios /*
-Template Name: Servicios
-*/<?php /*
+<?php
+/*
 Template Name: Servicios
 */
 get_header(); ?>

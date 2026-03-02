@@ -1,24 +1,49 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+<?php $fallback = get_template_directory_uri() . "/assets/images/bg-j-3.png"; ?>
 
-			<!-- article -->
-			<article id="post-404">
+<section
+    id="jumbotron"
+    style="background-image: url('<?php echo esc_url($fallback); ?>');"
+>
+    <div class="container">
+        <div class="row d-flex align-items-end">
+            <div class="col-12">
+                <h1
+                    class="display-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    404
+                </h1>
 
-				<h1><?php esc_html_e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
+                <p
+                    class="mt-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >
+                    La página que buscas no existe o fue movida.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-			</article>
-			<!-- /article -->
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<section class="pt-60 pb-60 text-center">
+    <div class="container">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+        >
+            <a href="<?php echo esc_url(
+                home_url(),
+            ); ?>" class="btn btn-primary">
+                Volver al inicio
+            </a>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
