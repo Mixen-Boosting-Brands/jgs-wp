@@ -23,7 +23,7 @@
                         </p>
                         <a
                             class="btn btn-light"
-                            href="#"
+                            href="<?php echo esc_url(get_permalink(18)); ?>"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="400"

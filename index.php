@@ -48,7 +48,9 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Solicitar cotización</a>
+                        <a href="<?php echo esc_url(
+                            get_permalink(18),
+                        ); ?>">Solicitar cotización</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +108,9 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Ver más</a>
+                        <a href="<?php echo esc_url(
+                            get_permalink(10),
+                        ); ?>">Ver más</a>
                     </li>
                 </ul>
             </div>
@@ -304,7 +308,9 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Conoce más</a>
+                        <a href="<?php echo esc_url(
+                            get_permalink(8),
+                        ); ?>">Conoce más</a>
                     </li>
                 </ul>
             </div>
