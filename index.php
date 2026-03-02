@@ -103,7 +103,9 @@
                     data-aos-delay="400"
                 >
                     <li class="list-inline-item">
-                        <a class="btn btn-secondary" href="#">
+                        <a class="btn btn-secondary" href="<?php echo esc_url(
+                            get_permalink(10),
+                        ); ?>">
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
                     </li>
@@ -123,7 +125,9 @@
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    <a class="img-link" href="#">
+                    <a class="img-link" href="<?php echo esc_url(
+                        get_permalink(10),
+                    ); ?>">
                         <img
                             src="<?php echo esc_url(
                                 get_template_directory_uri(),
@@ -134,7 +138,7 @@
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_permalink(10)); ?>">
                             <h5 class="card-title">
                                 Fabricación de Joist
                             </h5>
@@ -154,7 +158,9 @@
                     data-aos-duration="1000"
                     data-aos-delay="400"
                 >
-                    <a class="img-link" href="#">
+                    <a class="img-link" href="<?php echo esc_url(
+                        get_permalink(10),
+                    ); ?>">
                         <img
                             src="<?php echo esc_url(
                                 get_template_directory_uri(),
@@ -165,7 +171,7 @@
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_permalink(10)); ?>">
                             <h5 class="card-title">
                                 Fabricación de Joist Girder
                             </h5>
@@ -185,7 +191,9 @@
                     data-aos-duration="1000"
                     data-aos-delay="600"
                 >
-                    <a class="img-link" href="#">
+                    <a class="img-link" href="<?php echo esc_url(
+                        get_permalink(10),
+                    ); ?>">
                         <img
                             src="<?php echo esc_url(
                                 get_template_directory_uri(),
@@ -196,7 +204,7 @@
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_permalink(10)); ?>">
                             <h5 class="card-title">
                                 Suministro de Lámina Deck
                             </h5>
@@ -215,7 +223,9 @@
                     data-aos-duration="1000"
                     data-aos-delay="1000"
                 >
-                    <a class="img-link" href="#">
+                    <a class="img-link" href="<?php echo esc_url(
+                        get_permalink(10),
+                    ); ?>">
                         <img
                             src="<?php echo esc_url(
                                 get_template_directory_uri(),
@@ -226,7 +236,7 @@
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_permalink(10)); ?>">
                             <h5 class="card-title">
                                 Estructura metálica y soluciones
                                 especiales
