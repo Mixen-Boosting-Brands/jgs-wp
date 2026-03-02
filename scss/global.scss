@@ -48,7 +48,7 @@ h5 {
     }
 }
 
-a:not(.btn):not(.img-link) {
+a:not(.btn):not(.img-link):not(#logo-nav) {
     color: $font-dark;
     position: relative;
     text-decoration: none;
