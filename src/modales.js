@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const services = {
         joist: {
-            image: themeData.themeUrl + "./assets/images/servicios/1.png",
+            image: themeData.themeUrl + "/assets/images/servicios/1.png",
             titleAccent: "Fabricación",
             titleMain: "de joist",
             description:
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "joist-girder": {
-            image: themeData.themeUrl + "./assets/images/servicios/2.png",
+            image: themeData.themeUrl + "/assets/images/servicios/2.png",
             titleAccent: "Fabricación",
             titleMain: "de joist Girder",
             description:
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         "lamina-deck": {
-            image: themeData.themeUrl + "./assets/images/servicios/3.png",
+            image: themeData.themeUrl + "/assets/images/servicios/3.png",
             titleAccent: "Suministro",
             titleMain: "de Lámina Deck",
             description:
