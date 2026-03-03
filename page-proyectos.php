@@ -77,7 +77,7 @@ get_header(); ?>
 
                         <a class="img-link" href="<?php the_permalink(); ?>">
                             <?php if (has_post_thumbnail()): ?>
-                                <?php the_post_thumbnail("medium", [
+                                <?php the_post_thumbnail("custom", [
                                     "class" => "card-img-top",
                                     "alt" => get_the_title(),
                                 ]); ?>
