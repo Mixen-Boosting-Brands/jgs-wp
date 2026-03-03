@@ -45,205 +45,82 @@ get_header(); ?>
     <div class="container">
         <div class="row mb-4">
             <div class="col-12">
-                <h6
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="0"
-                >
+                <h6 data-aos="fade-up" data-aos-duration="1000">
                     <i class="fa-solid fa-square"></i> Proyectos
                 </h6>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/1.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Fabricación de Joist
-                            </h5>
+
+            <?php
+            $args = [
+                "post_type" => "proyecto",
+                "posts_per_page" => 6,
+                "post_status" => "publish",
+            ];
+
+            $proyectos = new WP_Query($args);
+
+            if ($proyectos->have_posts()):
+                $delay = 200;
+                while ($proyectos->have_posts()):
+                    $proyectos->the_post(); ?>
+
+                <div class="col-6 col-lg-4 d-flex">
+                    <div
+                        class="card card-contenido w-100 mb-4"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="<?php echo esc_attr($delay); ?>"
+                    >
+
+                        <a class="img-link" href="<?php the_permalink(); ?>">
+                            <?php if (has_post_thumbnail()): ?>
+                                <?php the_post_thumbnail("medium", [
+                                    "class" => "card-img-top",
+                                    "alt" => get_the_title(),
+                                ]); ?>
+                            <?php endif; ?>
+                            <i class="fa-solid fa-arrow-right-long"></i>
                         </a>
-                        <p class="card-text">
-                            Manufactura especializada conforme a
-                            estándares SJI, con control de calidad y
-                            trazabilidad completa.
-                        </p>
+
+                        <div class="card-body d-flex flex-column">
+                            <a href="<?php the_permalink(); ?>">
+                                <h5 class="card-title">
+                                    <?php the_title(); ?>
+                                </h5>
+                            </a>
+
+                            <p class="card-text">
+                                <?php echo wp_trim_words(
+                                    get_the_excerpt(),
+                                    18,
+                                ); ?>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/2.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Fabricación de Joist Girder
-                            </h5>
-                        </a>
-                        <p class="card-text">
-                            Soluciones estructurales diseñadas para
-                            soportar grandes cargas y proyectos
-                            complejos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/3.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Suministro de Lámina Deck
-                            </h5>
-                        </a>
-                        <p class="card-text">
-                            Material certificado para sistemas de
-                            entrepiso y cubiertas metálicas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="1000"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/4.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Estructura metálica y soluciones
-                                especiales
-                            </h5>
-                        </a>
-                        <p class="card-text">
-                            Fabricación de componentes estructurales,
-                            cimbras metálicas, bases para equipos y
-                            herrería industrial.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="1000"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/4.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Estructura metálica y soluciones
-                                especiales
-                            </h5>
-                        </a>
-                        <p class="card-text">
-                            Fabricación de componentes estructurales,
-                            cimbras metálicas, bases para equipos y
-                            herrería industrial.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-4 d-flex">
-                <div
-                    class="card card-contenido w-100 mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="1000"
-                >
-                    <a class="img-link" href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri(),
-                            ); ?>/assets/images/servicios/4.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <div class="card-body d-flex flex-column">
-                        <a href="#">
-                            <h5 class="card-title">
-                                Estructura metálica y soluciones
-                                especiales
-                            </h5>
-                        </a>
-                        <p class="card-text">
-                            Fabricación de componentes estructurales,
-                            cimbras metálicas, bases para equipos y
-                            herrería industrial.
-                        </p>
-                    </div>
-                </div>
+
+            <?php $delay += 200;
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+
+        </div>
+
+        <!-- Botón Ver más -->
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <a href="<?php echo esc_url(
+                    get_post_type_archive_link("proyecto"),
+                ); ?>" class="btn btn-primary">
+                    Ver más
+                </a>
             </div>
         </div>
+
     </div>
 </section>
 
