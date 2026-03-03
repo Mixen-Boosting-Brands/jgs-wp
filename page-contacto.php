@@ -87,7 +87,7 @@ get_header(); ?>
         <div class="row mb-4">
             <div class="col-md-6 my-auto">
                 <img
-                    class="img-fluid"
+                    class="img-fluid mb-4 mb-md-0"
                     src="<?php echo esc_url(
                         get_template_directory_uri(),
                     ); ?>/assets/images/thumb-contacto.png"
