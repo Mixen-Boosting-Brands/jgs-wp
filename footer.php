@@ -38,7 +38,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 text-center my-auto">
-                        <a href="<?php echo esc_url(home_url()); ?>">
+                        <a class="logo-link" href="<?php echo esc_url(
+                            home_url(),
+                        ); ?>">
                             <img
                                 id="logo-footer"
                                 class="logo img-fluid mb-4 mb-lg-0"

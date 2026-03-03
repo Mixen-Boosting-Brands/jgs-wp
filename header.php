@@ -119,7 +119,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-3 my-auto">
-                        <a href="<?php echo esc_url(home_url()); ?>">
+                        <a class="logo-link" href="<?php echo esc_url(
+                            home_url(),
+                        ); ?>">
                             <img
                                 id="logo-navbar"
                                 class="logo img-fluid"
