@@ -263,7 +263,9 @@
                                         <ul class="modal-value"></ul>
                                     </div>
 
-                                    <a href="#" class="btn btn-primary mt-3">
+                                    <a href="<?php echo esc_url(
+                                        get_permalink(18),
+                                    ); ?>" class="btn btn-primary mt-3">
                                         Solicitar cotización
                                     </a>
                                 </div>
