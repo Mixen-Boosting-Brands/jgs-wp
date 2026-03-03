@@ -631,22 +631,40 @@ function bootstrap_pagination(
         }
     }
     return null;
-} /*------------------------------------*\
-    Corrección de rutas de imágenes en modales de servicios
-\*------------------------------------*/ /**
+}
 
-wp_enqueue_script(
-    'modales',
-    get_template_directory_uri() . '/assets/js/modales.js',
-    ['bootstrap'],
-    null,
-    true
-);
+/*------------------------------------*\
+    Scripts personalizados (Bootstrap + Modales)
+\*------------------------------------*/
 
-wp_localize_script(
-    'modales',
-    'themeData',
-    [
-        'themeUrl' => get_template_directory_uri()
-    ]
-);
+function theme_custom_scripts() {
+
+    // Bootstrap (asegúrate de que la ruta sea correcta)
+    wp_enqueue_script(
+        'bootstrap',
+        get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js',
+        [],
+        null,
+        true
+    );
+
+    // Script de modales
+    wp_enqueue_script(
+        'modales',
+        get_template_directory_uri() . '/assets/js/modales.js',
+        ['bootstrap'],
+        null,
+        true
+    );
+
+    // Pasar URL del theme a JS
+    wp_localize_script(
+        'modales',
+        'themeData',
+        [
+            'themeUrl' => get_template_directory_uri()
+        ]
+    );
+}
+
+add_action('wp_enqueue_scripts', 'theme_custom_scripts');
