@@ -633,7 +633,7 @@ function bootstrap_pagination(
     return null;
 } /*------------------------------------*\
     Corrección de rutas de imágenes en modales de servicios
-\*------------------------------------*/
+\*------------------------------------*/ /**
 
 wp_enqueue_script(
     'modales',
