@@ -108,8 +108,7 @@
                     </ul>
                 </nav>
                 <a href="<?php echo esc_url(get_permalink(18)); ?>"
-                   class="anchor btn btn-primary"
-                   id="btn-contacto">
+                   class="btn btn-primary">
                     <?php echo esc_html(get_the_title(18)); ?>
                 </a>
             </div>
