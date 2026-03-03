@@ -22,7 +22,7 @@ get_header(); ?>
                     data-aos-duration="1000"
                     data-aos-delay="0"
                 >
-                    <span>Certificacioneds que</span><br />
+                    <span>Certificaciones que</span><br />
                     grantizan calidad y cumplimiento
                 </h1>
                 <p
