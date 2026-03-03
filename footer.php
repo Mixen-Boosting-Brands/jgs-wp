@@ -201,78 +201,78 @@
         </footer>
 
         <?php if (is_page(10)): ?>
-            <!-- Modal Servicio -->
-            <div
-                class="modal fade modal-servicio"
-                id="serviceModal"
-                tabindex="-1"
-                aria-hidden="true"
-            >
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <div class="modal-body p-0 position-relative">
-                            <button
-                                type="button"
-                                class="btn-close position-absolute top-0 end-0 m-4"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                            ></button>
+        <!-- Modal Servicio -->
+        <div
+            class="modal fade modal-servicio"
+            id="serviceModal"
+            tabindex="-1"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content border-0">
+                    <div class="modal-body p-0 position-relative">
+                        <button
+                            type="button"
+                            class="btn-close position-absolute top-0 end-0 m-4"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
 
-                            <div class="row g-0">
-                                <!-- IMAGE COLUMN -->
-                                <div class="col-lg-5">
-                                    <div class="modal-image-wrapper h-100">
-                                        <img
-                                            src=""
-                                            alt=""
-                                            class="img-fluid w-100 modal-service-image"
-                                        />
-                                    </div>
+                        <div class="row g-0">
+                            <!-- IMAGE COLUMN -->
+                            <div class="col-lg-5">
+                                <div class="modal-image-wrapper h-100">
+                                    <img
+                                        src=""
+                                        alt=""
+                                        class="img-fluid w-100 modal-service-image"
+                                    />
                                 </div>
+                            </div>
 
-                                <!-- CONTENT COLUMN -->
-                                <div class="col-lg-7">
-                                    <div class="modal-content-wrapper p-5">
-                                        <h2 class="modal-title mb-4">
-                                            <span class="modal-title-accent"></span>
-                                            <span class="modal-title-main"></span>
-                                        </h2>
+                            <!-- CONTENT COLUMN -->
+                            <div class="col-lg-7">
+                                <div class="modal-content-wrapper p-5">
+                                    <h2 class="modal-title mb-4">
+                                        <span class="modal-title-accent"></span>
+                                        <span class="modal-title-main"></span>
+                                    </h2>
 
-                                        <p class="modal-description mb-4"></p>
+                                    <p class="modal-description mb-4"></p>
 
-                                        <div class="modal-section mb-4">
-                                            <h6 class="fw-bold mb-3">
-                                                ¿Qué incluye este servicio?
-                                            </h6>
-                                            <ul class="modal-includes"></ul>
-                                        </div>
-
-                                        <div class="modal-section mb-4">
-                                            <h6 class="fw-bold mb-3">
-                                                ¿Para quién es este servicio?
-                                            </h6>
-                                            <div
-                                                class="modal-audience row g-3"
-                                            ></div>
-                                        </div>
-
-                                        <div class="modal-section mb-4">
-                                            <h6 class="fw-bold mb-3">
-                                                Valor agregado:
-                                            </h6>
-                                            <ul class="modal-value"></ul>
-                                        </div>
-
-                                        <a href="#" class="btn btn-primary mt-3">
-                                            Solicitar cotización
-                                        </a>
+                                    <div class="modal-section mb-4">
+                                        <h6 class="fw-bold mb-3">
+                                            ¿Qué incluye este servicio?
+                                        </h6>
+                                        <ul class="modal-includes"></ul>
                                     </div>
+
+                                    <div class="modal-section mb-4">
+                                        <h6 class="fw-bold mb-3">
+                                            ¿Para quién es este servicio?
+                                        </h6>
+                                        <div
+                                            class="modal-audience row g-3"
+                                        ></div>
+                                    </div>
+
+                                    <div class="modal-section mb-4">
+                                        <h6 class="fw-bold mb-3">
+                                            Valor agregado:
+                                        </h6>
+                                        <ul class="modal-value"></ul>
+                                    </div>
+
+                                    <a href="#" class="btn btn-primary mt-3">
+                                        Solicitar cotización
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <?php endif; ?>
 
         <?php wp_footer(); ?>
