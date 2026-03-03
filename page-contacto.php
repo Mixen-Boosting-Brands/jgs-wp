@@ -232,6 +232,7 @@ get_header(); ?>
                                 id="pais"
                                 name="pais"
                                 aria-label="Selecciona tu país"
+                                required
                             >
                                 <option value="" selected disabled>
                                     Selecciona tu país
