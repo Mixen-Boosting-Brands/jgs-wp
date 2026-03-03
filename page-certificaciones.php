@@ -23,7 +23,7 @@ get_header(); ?>
                     data-aos-delay="0"
                 >
                     <span>Certificaciones que</span><br />
-                    grantizan calidad y cumplimiento
+                    garantizan calidad y cumplimiento
                 </h1>
                 <p
                     class="lead"
