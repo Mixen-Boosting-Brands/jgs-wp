@@ -187,7 +187,9 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <a <?php if (
-                                        is_page(14)
+                                        is_page(14) ||
+                                        is_post_type_archive("proyecto") ||
+                                        is_singular("proyecto")
                                     ): ?>class="active"<?php endif; ?> href="<?php echo esc_url(
      get_permalink(14),
  ); ?>">
