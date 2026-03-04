@@ -42,6 +42,11 @@ get_header(); ?>
                                 >
                             </li>
                             <li class="list-inline-item">
+                                <a href="tel:+19152582020"
+                                    >+1 (915) 258-2020</a
+                                >
+                            </li>
+                            <li class="list-inline-item">
                                 <a href="tel:+526142582020"
                                     >+52 (614) 258-2020</a
                                 >
