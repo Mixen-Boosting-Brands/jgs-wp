@@ -26,15 +26,6 @@ $bg_image = has_post_thumbnail()
                 >
                     <?php the_title(); ?>
                 </h1>
-
-                <p
-                    class="mt-3"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    <?php echo get_the_date(); ?> · <?php the_author(); ?>
-                </p>
             </div>
         </div>
     </div>
