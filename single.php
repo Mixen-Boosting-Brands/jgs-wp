@@ -16,6 +16,7 @@ $bg_image = has_post_thumbnail()
     id="jumbotron"
     style="background-image: url('<?php echo esc_url($bg_image); ?>');"
 >
+    <div class="overlay"></div>
     <div class="container">
         <div class="row d-flex align-items-end">
             <div class="col-12">
