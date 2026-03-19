@@ -2,13 +2,28 @@
 
 <section
     id="jumbotron"
+    class="jumbotron-video"
     style="
-        background-image: url(&quot;<?php echo esc_url(
+        background-image: url('<?php echo esc_url(
             get_template_directory_uri(),
-        ); ?>/assets/images/bg-j-1.png&quot;);
+        ); ?>/assets/images/bg-j-1.png');
     "
 >
+    <!-- Video background -->
+    <video
+        class="bg-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="<?php echo esc_url(
+            get_template_directory_uri(),
+        ); ?>/assets/videos/bg-video.mov" type="video/mp4">
+    </video>
+
     <div class="overlay"></div>
+
     <div class="container">
         <div class="row d-flex align-items-end">
             <div class="col-12">
@@ -18,12 +33,12 @@
                     data-aos-duration="1000"
                     data-aos-delay="0"
                 >
-                    <strong
-                        >Manufactura metalmecánica<br />
-                        certificada para proyectos de gran
-                        escala</strong
-                    >
+                    <strong>
+                        Manufactura metalmecánica<br />
+                        certificada para proyectos de gran escala
+                    </strong>
                 </h1>
+
                 <p
                     class="lead"
                     data-aos="fade-up"
@@ -36,6 +51,7 @@
                     especializado y capacidad operativa para México y
                     Estados Unidos.
                 </p>
+
                 <ul
                     class="list-inline"
                     data-aos="fade-up"
@@ -48,14 +64,15 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="<?php echo esc_url(
-                            get_permalink(18),
-                        ); ?>">Solicitar cotización</a>
+                        <a href="<?php echo esc_url(get_permalink(18)); ?>">
+                            Solicitar cotización
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
     <img
         id="logo"
         src="<?php echo esc_url(

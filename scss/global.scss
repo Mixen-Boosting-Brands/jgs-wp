@@ -344,6 +344,52 @@ header {
     padding-top: 80px;
 }
 
+.jumbotron-video {
+    position: relative;
+    overflow: hidden;
+
+    // Fallback
+    background-size: cover;
+    background-position: center;
+
+    /* Video */
+    .bg-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+
+        z-index: 0;
+        pointer-events: none; // evita interacciones raras
+    }
+
+    /* Overlay */
+    .overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    /* Contenido */
+    .container,
+    #logo {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Accesibilidad: reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+        .bg-video {
+            display: none;
+        }
+    }
+}
+
 .cta-hablemos {
     background-color: $font-primary;
     color: $font-light;
