@@ -56,7 +56,7 @@ get_header(); ?>
             <?php
             $args = [
                 "post_type" => "proyecto",
-                "posts_per_page" => 6,
+                "posts_per_page" => -1,
                 "post_status" => "publish",
             ];
 
@@ -111,7 +111,7 @@ get_header(); ?>
         </div>
 
         <!-- Botón Ver más -->
-        <div class="row">
+        <!-- div class="row">
             <div class="col-12 text-center mt-3">
                 <a href="<?php echo esc_url(
                     get_post_type_archive_link("proyecto"),
@@ -119,7 +119,7 @@ get_header(); ?>
                     Ver más
                 </a>
             </div>
-        </div>
+        </div -->
 
     </div>
 </section>
