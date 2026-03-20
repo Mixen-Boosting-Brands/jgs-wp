@@ -28,6 +28,13 @@ get_header(); ?>
                     <i class="fa-solid fa-square"></i> Estamos listos
                     para apoyar tu proyecto
                 </h6>
+
+                <p
+                    class="mb-4" data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >USA</p>
+
                 <ul
                     class="list-unstyled"
                     data-aos="fade-up"
@@ -55,11 +62,17 @@ get_header(); ?>
                     </li>
                 </ul>
 
+                <p
+                    class="mb-4" data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                >México</p>
+
                 <ul
                     class="list-unstyled"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="200"
+                    data-aos-delay="400"
                 >
                     <li class="mb-4">
                         <ul class="list-inline">
@@ -86,7 +99,7 @@ get_header(); ?>
                     class="list-unstyled"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="400"
+                    data-aos-delay="600"
                 >
                     <li class="mb-4">
                         <address>

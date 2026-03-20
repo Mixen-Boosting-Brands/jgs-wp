@@ -83,6 +83,11 @@
                                             >+1 (915) 258-2020</a
                                         >
                                     </li>
+                                    <li>
+                                        <a href="mailto:sales@jgsolutions.mx"
+                                            >sales@jgsolutions.mx</a
+                                        >
+                                    </li>
                                 </ul>
 
                                 <ul class="list-unstyled mb-4">
