@@ -57,7 +57,7 @@ get_header(); ?>
                     </li>
                     <li class="mb-4">
                         <a href="mailto:sales@jgsolutions.mx"
-                            >sales@jgsolutions.mx (USA)</a
+                            >sales@jgsolutions.mx</a
                         >
                     </li>
                 </ul>
@@ -90,7 +90,7 @@ get_header(); ?>
                     </li>
                     <li class="mb-4">
                         <a href="mailto:ventas@jgsolutions.mx"
-                            >ventas@jgsolutions.mx (México)</a
+                            >ventas@jgsolutions.mx</a
                         >
                     </li>
                 </ul>
