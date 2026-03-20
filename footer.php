@@ -69,7 +69,10 @@
                                 data-aos-delay="200"
                             >
                                 <p><strong>Contacto</strong></p>
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled mb-4">
+                                    <li>
+                                        USA
+                                    </li>
                                     <li>
                                         <a href="tel:+19152270023"
                                             >+1 (915) 227-0023</a
@@ -80,9 +83,15 @@
                                             >+1 (915) 258-2020</a
                                         >
                                     </li>
+                                </ul>
+
+                                <ul class="list-unstyled mb-4">
                                     <li>
-                                        <a href="tel:+526142582020"
-                                            >+52 (614) 258-2020</a
+                                        México
+                                    </li>
+                                    <li>
+                                        <a href="tel:+526141215119"
+                                            >+52 (614) 121-5119</a
                                         >
                                     </li>
                                     <li>
@@ -95,6 +104,9 @@
                                             >ventas@jgsolutions.mx</a
                                         >
                                     </li>
+                                </ul>
+
+                                <ul class="list-unstyled">
                                     <li>
                                         <address>
                                             Sector 103 Parcela 254 Z-7 P 1/2

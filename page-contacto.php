@@ -46,9 +46,26 @@ get_header(); ?>
                                     >+1 (915) 258-2020</a
                                 >
                             </li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">
+                        <a href="mailto:sales@jgsolutions.mx"
+                            >sales@jgsolutions.mx (USA)</a
+                        >
+                    </li>
+                </ul>
+
+                <ul
+                    class="list-unstyled"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                >
+                    <li class="mb-4">
+                        <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="tel:+526142582020"
-                                    >+52 (614) 258-2020</a
+                                <a href="tel:+526141215119"
+                                    >+52 (614) 121-5119</a
                                 >
                             </li>
                             <li class="list-inline-item">
@@ -60,9 +77,17 @@ get_header(); ?>
                     </li>
                     <li class="mb-4">
                         <a href="mailto:ventas@jgsolutions.mx"
-                            >ventas@jgsolutions.mx</a
+                            >ventas@jgsolutions.mx (México)</a
                         >
                     </li>
+                </ul>
+
+                <ul
+                    class="list-unstyled"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                >
                     <li class="mb-4">
                         <address>
                             Sector 103 Parcela 254 Z-7 P 1/2 6802<br />
@@ -72,6 +97,7 @@ get_header(); ?>
                         </address>
                     </li>
                 </ul>
+
                 <img
                     class="img-fluid"
                     src="<?php echo esc_url(
@@ -80,7 +106,7 @@ get_header(); ?>
                     alt=""
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="400"
+                    data-aos-delay="600"
                 />
             </div>
         </div>
