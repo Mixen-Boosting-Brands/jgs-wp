@@ -30,7 +30,7 @@ get_header(); ?>
                 </h6>
 
                 <p
-                    class="mb-4" data-aos="fade-up"
+                    class="mb-2" data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >USA</p>
@@ -41,7 +41,7 @@ get_header(); ?>
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    <li class="mb-4">
+                    <li class="mb-2">
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <a href="tel:+19152270023"
@@ -63,7 +63,7 @@ get_header(); ?>
                 </ul>
 
                 <p
-                    class="mb-4" data-aos="fade-up"
+                    class="mb-2" data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="400"
                 >México</p>
@@ -74,7 +74,7 @@ get_header(); ?>
                     data-aos-duration="1000"
                     data-aos-delay="400"
                 >
-                    <li class="mb-4">
+                    <li class="mb-2">
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <a href="tel:+526141215119"
